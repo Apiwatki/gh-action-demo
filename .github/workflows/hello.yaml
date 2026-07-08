@@ -1,1 +1,12 @@
-test xxx
+name: Hello World
+on: 
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs:
+  hello-job:
+    runs-on: ubuntu-lastest
+    steps:
+     - name: Run a one-line script
+       run: echo 'Hello Github Actions!"
